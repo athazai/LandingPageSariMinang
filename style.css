@@ -1,0 +1,707 @@
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+   }
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;   
+    align-items: center;
+    padding: 0 1.5vw;
+    background-color: white;
+    position: fixed;
+    text-decoration: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.toogle {
+    display: none;
+}
+
+.logo-sariminang {
+    list-style: none;
+    text-decoration: none;
+    height: 50px;
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+.navbar-item {
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    align-items: center;
+    font-weight: 600;
+    list-style: none;
+    color: #555555;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}   
+
+.navbar-item-a {
+    text-decoration: none;
+    color: #555555;
+    transition: all .5s ease;
+}
+
+.navbar-item-a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+    transition: all .5s ease;
+}
+
+
+.btn-ourproducts {
+    padding: 15px;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFCD29;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 100px;
+    border-style: none;
+    transition: all .5s ease;
+}
+
+.btn-ourproducts:hover {
+    background-color: white;
+    color: #FFCD29;
+    box-shadow: 0 0 10px ;
+    transition: all .5s ease;
+}
+
+@media screen and (max-width:912px) {
+
+    .toogle {
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .slider {
+        display: none;
+    }
+
+    .toogle {
+        display: flex;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding-inline: 1.5rem;
+    }
+
+    .logo-sariminang {
+        list-style: none;
+        text-decoration: none;
+        height: 25px;
+        padding: 10px;
+    }
+
+    .navbar-item {
+        display: none;
+    }
+
+    .btn-ourproducts {
+        display: none;
+    }
+
+    .img_toogle {
+        height: 20px;
+    }
+
+    .header__title {
+        font-size: 10vw;
+    }
+
+    .banner-aboutus {
+        display: none;
+    }
+
+    .float {
+        display: none;
+    }
+
+    .desk_highlighted_seasoning {
+        font-size: 4vw;
+    }
+
+}
+
+/* end navbar */
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.bg-image {
+    background-image: url(../assets/header.png);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.container {
+    position: absolute;
+    z-index: 2;
+}
+
+.header__title {
+    color: white;
+    font-weight: 600;
+    font-size: 2.2vw;
+}
+
+@media screen and (max-width:480px) {
+    .header__title {
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .header__title {
+        font-size: 2rem;
+    }
+}
+
+/* end header */
+
+/* About us */
+
+.Tag-AbouUs {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.8vw;
+    color: #212529;
+}
+
+.desk-aboutus {
+    text-align: center;
+    color: #212529;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 0.8vw;
+}
+
+.aboutus-row {
+    display: flex;
+    margin-top: 4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-aboutus {
+    width: 50%;
+}
+
+.paragraph-aboutus {
+    font-size: 0.8vw;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.titik-aboutus {
+    height: 10rem;
+}
+
+.aboutus-desk {
+    padding: 8rem;
+}
+
+@media screen and (max-width:480px) {
+
+    .Tag-AbouUs {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .desk-aboutus {
+        font-size: 0.55rem;
+        margin-top: -1rem;
+    }
+
+    .aboutus-row {
+        display: none;
+    }
+
+    .aboutus-desk {
+        padding: 1rem;
+    }
+}
+
+
+/* End About us */
+
+/* Our Clients */
+
+.angka-ourclients {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: #FAFAFA;
+}
+
+.index-ourclients {
+    color: #FFCD29;
+    font-size: 2vw;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+}
+
+.tiga_clients {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10rem;
+    margin-inline: 20rem;
+}
+
+.desk_tigaclients_paragraphs {
+    color: #212529;
+    font-size: 0.8vw;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.text_our_clients {
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 1.8vw;
+    color: #212529;
+}
+
+.paragraph_ourclients {
+    text-align: center;
+    margin-inline: 30rem;
+    color: #212529;
+    font-weight: 400;
+}
+
+.negara_clients {
+    width: 8%;
+}
+
+.ourclients_row {
+    display: flex;
+    margin-top: 3rem;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width:480px) {
+    .index-ourclients {
+        font-size: 1.5rem;
+    }
+
+    .desk_tigaclients_paragraphs {
+        font-size: 0.6rem;
+    }
+
+    .text_our_clients {
+        font-size: 2rem;
+        margin-top: 5rem;
+    }
+    .paragraph_ourclients {
+        margin-inline: 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .ourclients_row {
+        margin-inline: none;
+    }
+
+    .negara_clients {
+        width: 10%;
+    }
+}
+
+/* end Our Clients */
+
+/* Highlighted Seasoning */
+
+.highlighted_seasoning {
+    display: flex;
+    margin-top: 10rem;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.hiasan_highlighted_seasoning {
+    height: 30rem;
+}
+
+.slider {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    margin: 30px 0;
+    margin-top: 5rem;
+  }
+  .slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  .slides::-webkit-scrollbar { width: 3px; height: 3px; }
+  .slides::-webkit-scrollbar-thumb { background: #ccc; border-radius: 5px; }
+  .slides::-webkit-scrollbar-track { background: transparent; }
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    height: 500px;
+    width: 500px;
+    margin: 0 10px 0 10px;
+    border-radius: 7px;
+    background: #fff;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: 100%;
+}
+
+.text_highlighted_seasoning {
+    margin-top: 5rem;
+    margin-inline: 5rem;
+}
+
+.header_highlighted_seasoning {
+    color: #212529;
+}
+
+.desk_highlighted_seasoning {
+    color: #212529;
+    text-align: justify;
+}
+
+.gambar_highlighted_seasoning {
+    width: 100%;
+}
+
+.testimonials-row {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 2.5rem;
+}
+
+.header_testimonials {
+    color: #212529;
+    text-align: center;
+    font-size: 1.8vw;
+}
+
+.testi-1 {
+    display: flex;
+}
+
+.img-testimonials {
+    width: 70px;
+    height: 70px;
+}
+
+.text-testimonials {
+    font-weight: 600;
+    color: #212529;
+    padding-left: 1rem;
+    font-size: 1vw;
+    margin-bottom: -0.25rem;
+}
+
+.job-testimonials {
+    color: #FFCD29;
+    padding-left: 1rem;
+    font-size: 0.7vw;
+    margin-top: -0.25;
+}
+
+.column-testi-1 {
+    display: block;
+}
+
+.row_desk_testimonials {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.desk_testimonials {
+    color: #212529;
+    font-style: italic;
+}
+
+.bg-image_products {
+    margin-top: 8rem;
+    background-image: url(../assets/highlighted_seasoning/bgourproducts.png);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.container_products {
+    position: absolute;
+    z-index: 2;
+}
+
+.header__title_products {
+    color: white;
+    font-weight: bold;
+    font-size: 2.2vw;
+    margin-top: 20rem;
+}
+
+.desk_title_products {
+    color: white;
+    text-align: center;
+    font-weight: 200;
+}
+
+.btn-ourproducts_products {
+    padding: 15px;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #212529;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 2.5px;
+    border-style: none;
+    transition: all .5s ease;
+}
+
+.btn-ourproducts_products:hover {
+    background-color: white;
+    color: #FFCD29;
+    box-shadow: 0 0 10px ;
+    transition: all .5s ease;
+}
+
+.navbar-button_products {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+@media screen and (max-width:480px) {
+
+    .highlighted_seasoning {
+        margin-top: 2.5rem;
+    }
+
+    .desk_highlighted_seasoning {
+        margin-right: 0;
+        margin-right: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .text_highlighted_seasoning {
+        margin-inline: 0;
+    }
+
+    .header_highlighted_seasoning {
+        justify-content: end;
+        align-items: end;
+        text-align: end;
+        margin-inline: 2rem;
+    }
+
+    .header_testimonials {
+        font-size: 1.5rem;
+    }
+
+    .text-testimonials {
+        font-size: 2.5vw;
+    }
+
+    .job-testimonials {
+        font-size: 1.7vw;
+    }
+
+    .row_desk_testimonials {
+        margin-inline: 1rem;
+        justify-content: space-between;
+    }
+
+    .testimonials-row {
+        margin-inline: 0.5rem;
+    }
+
+    .desk_testimonials {
+        font-size: 0.9rem;
+    }
+
+    .header__title_products {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+    .desk_title_products {
+        font-size: 0.7rem;
+    }
+}
+
+/* End Highlighted Seasoning */
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.text_footer {
+    font-weight: 700;
+    color: #212529;
+    margin-top: 1rem;
+}
+
+.desk_footer {
+    color: #212529;
+    margin-top: 3rem;
+}
+
+.sitemap {
+    font-weight: 500;
+    font-size: 1vw;
+    color: #212529;
+}
+
+li {
+    list-style: none;
+}
+
+.footer_sitemap {
+    margin-left: -2.5rem;
+    text-decoration: none;
+    color: #555555;
+    transition: all .5s ease;
+}
+
+.sitemap_footer_item {
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.sitemap_footer_item:hover {
+    color: black;
+}
+
+.sitemap_footer {
+    font-size: 0.6vw;
+    text-decoration: none;
+    list-style: none;
+    color: #555555;
+    transition: all .5s ease;
+}
+
+.sitemap_footer_kota {
+    font-weight: 700;
+    color: #212529;
+}
+
+.sitemap_footer_nomorhp {
+    color: #FFCD29;
+    font-size: 0.6vw;
+}
+
+@media screen and (max-width:480px) {
+    footer {
+        display: block;
+        text-align: center;
+    }
+
+    .desk_footer {
+        margin-top: 1.5rem;
+    }
+
+    .sitemap {
+        font-size: 1rem;
+    }
+
+    .sitemap_footer_nomorhp {
+        font-size: 0.8rem;
+    }
+
+    .sitemap_footer {
+        font-size: 0.8rem;
+    }
+
+    .footer_row {
+        margin-block: 5rem;
+        margin-inline: 2rem;
+    }
+}
+
+
+/* end footer */
+
+.float{
+	position:fixed;
+	width:80px;
+	height:80px;
+	bottom:40px;
+	right:40px;
+	background-color:#FFCD29;
+	color:white;
+	border-radius:50px;
+    text-align: center;
+    padding-top: 15px;
+    padding-inline: 10px;
+}
+
+.uil-whatsapp { 
+    font-size: 3rem;
+    color: white;
+}
