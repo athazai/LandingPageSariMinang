@@ -39,7 +39,7 @@ body::-webkit-scrollbar{
 .logo-sariminang {
     list-style: none;
     text-decoration: none;
-    height: 50px;
+    height: 40px;
 }
 
 .navbar-list {
@@ -103,6 +103,10 @@ body::-webkit-scrollbar{
     .toogle {
         display: none;
     }
+
+    .navbar-list {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -118,6 +122,8 @@ body::-webkit-scrollbar{
     .navbar {
         justify-content: space-between;
         padding-inline: 1.5rem;
+        flex-wrap: wrap;
+        display: none;
     }
 
     .logo-sariminang {
@@ -127,7 +133,7 @@ body::-webkit-scrollbar{
         padding: 10px;
     }
 
-    .navbar-item {
+    .navbar-list {
         display: none;
     }
 
@@ -198,7 +204,7 @@ header {
 
 @media screen and (max-width:414px) {
     .header__title {
-        font-size: 2rem;
+        font-size: 2.25rem;
     }
 }
 
@@ -375,6 +381,7 @@ header {
     overflow: hidden;
     margin: 30px 0;
     margin-top: 5rem;
+    padding-left: -35rem;
   }
   .slides {
     display: flex;
@@ -417,6 +424,7 @@ header {
 .desk_highlighted_seasoning {
     color: #212529;
     text-align: justify;
+    
 }
 
 .gambar_highlighted_seasoning {
@@ -437,6 +445,10 @@ header {
 }
 
 .testi-1 {
+    display: flex;
+}
+
+.testi-2 {
     display: flex;
 }
 
@@ -558,16 +570,16 @@ header {
     }
 
     .text-testimonials {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
 
     .job-testimonials {
-        font-size: 1.7vw;
+        font-size: 2vw;
     }
 
     .row_desk_testimonials {
         margin-inline: 1rem;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .testimonials-row {
@@ -575,7 +587,9 @@ header {
     }
 
     .desk_testimonials {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        margin-top: 1.5rem;
+        margin-left: 2rem;
     }
 
     .header__title_products {
@@ -586,6 +600,14 @@ header {
 
     .desk_title_products {
         font-size: 0.7rem;
+    }
+
+    .testi-2 {
+        display: none;
+    }
+
+    .desk_testimonials2 {
+        display: none;
     }
 }
 
@@ -632,6 +654,7 @@ li {
 .sitemap_footer_item {
     text-decoration: none;
     font-size: 0.8rem;
+    color: #212529;
 }
 
 .sitemap_footer_item:hover {

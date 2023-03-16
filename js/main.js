@@ -7,3 +7,12 @@ toggleButton.addEventListener("click", function () {
     navbarItem[i].classList.toggle("active");
   }
 });
+
+
+// const hamburger = document.querySelector(".toogle");
+// const navBar = document.querySelector(".navbar-item");
+
+// hamburger.addEventListener("click", () => {
+//   hamburger.classList.toggle("active")
+//   navBar.classList.toggle("active")
+// }); 
